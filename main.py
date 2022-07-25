@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)  # Flask("main.py)
+app = Flask(__name__, static_url_path="", static_folder="static")  # Flask("main.py)
 
 
 @app.route("/")  # Create a page on the first url
