@@ -12,7 +12,17 @@
       <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
     </head>
     <body>
-      <h1 class="h1">Home Page Heading</h1>
-      <p>psedo code</p>
+      <div class="container-sm mt-4 centered">
+        <h1 class="h1">My Todo List</h1>
+        <p>Add some thing to your list!</p>
+
+        <input placeholder="Add an item to your to do list">
+        <button class="btn btn-success ml-4">Add Item</button>
+        <ul id="todo-list">
+          {% for item in todolist %}
+              <li>{{item}}</li>
+          {% endfor %}
+        </ul>
+      </div>  
     </body>
 </html>

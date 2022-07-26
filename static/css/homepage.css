@@ -1,4 +1,9 @@
-.MainHeading{
-  color: #7b7b7bff;
-  font-weight: 800;
+.centered {
+  text-align: center;
+}
+
+#todo-list{
+  text-align: left;
+  width: 75%;
+  margin: auto;
 }
